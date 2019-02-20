@@ -18,15 +18,16 @@ describe 'Blackjac Score' do
     score = blackjack_score(hand)
 
     # Assert <-  You do this part!
-
+    expect(hand).must_be_instance_of String #expecting time must be a string
   end
 
   it 'facecards have values calculated correctly' do
-
+    facecards = [ "King", "Queen", "Jack"]
   end
 
   it 'calculates aces as 11 where it does not go over 21' do
-
+    facecards.each do |facecards|
+      score = blackjack_score(facecard, 3)
   end
 
   it 'calculates aces as 1, if an 11 would cause the score to go over 21' do
